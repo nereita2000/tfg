@@ -1,0 +1,9 @@
+.:53 {
+    forward . 8.8.8.8
+    log
+}
+
+urjc.es {
+    file /db_dns/urjc.es.zone
+    log
+}

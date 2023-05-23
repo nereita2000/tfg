@@ -1,0 +1,10 @@
+version: '3'
+services:
+  coredns:
+    image: neree00/corednsurjc:0.3
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+    volumes:
+      - ./Corefile:/etc/coredns/Corefile
+      - ./db_dns:/db_dns

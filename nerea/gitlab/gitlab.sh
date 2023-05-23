@@ -1,0 +1,1 @@
+docker run -d -p 22:22 -p 80:80 -p 443:443 --name gitlab --hostname gitlab.example.com --restart unless-stopped --shm-size 256m -v gitlab_config:/etc/gitlab -v gitlab_logs:/var/log/gitlab -v gitlab_data:/var/opt/gitlab gitlab/gitlab-ce:14.7.0-ce.0

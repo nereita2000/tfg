@@ -1,0 +1,13 @@
+$TTL 1h
+@       IN      SOA     ns1.urjc.es. admin.urjc.es. (
+                        2023052201  ; Número de serie
+                        1h          ; Tiempo de refresco
+                        15m         ; Tiempo de reintento
+                        1w          ; Tiempo de expiración
+                        1h          ; Tiempo mínimo de caché
+                        )
+        IN      NS      ns1.urjc.es.      ; Nombre del servidor de nombres principal
+
+ns1     IN      A       192.168.15.10     ; Dirección IP del servidor de nombres principal
+
+@       IN      A       192.168.15.10     ; Dirección IP del dominio urjc.es

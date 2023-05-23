@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  dhcp:
+    image: networkboot/dhcpd
+    container_name: dhcp
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./dhcpd.conf:/etc/dhcp/dhcpd.conf:ro
+      - ./dhcpd.leases:/var/lib/dhcp/dhcpd.leases
+    command: dhcpd -4 -f -d --no-pid
