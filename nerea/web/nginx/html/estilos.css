@@ -8,7 +8,7 @@ body {
   align-items: center;
 }
 #menu {
-  max-width: 800px;
+  margin: 0;
   padding: 20px;
   text-align: center;
   border: 1px solid #ccc;
